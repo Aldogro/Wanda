@@ -1,0 +1,134 @@
+/* GENERALES */
+h2{
+  color: #ec383d;
+  text-align: center;
+  font-size: 3em;
+}
+h3{
+  font-family: Rockness;
+  font-size: 3em;
+  text-align: center;
+  color: #ec383d;
+}
+
+/* ANIMACIONES */
+.fadeIn{
+  transform: translateX(0em);
+  transition: transform 1s 0.3s;
+}
+.fadeIn:hover{
+  transform: translateX(-20em);
+  transition: transform 1s 0.3s;
+}
+
+.row{
+  margin:0px!important;
+}
+
+/* HEADER */
+.subtitulos{
+  margin: 0px;
+  border-top: 2px solid #ec383d;
+  background: #ffe2e3 url(../images/asfalt-dark.png) center top repeat;
+  z-index: 1;position: relative;padding:40px 0px;
+}
+.redonda {
+  border-radius: 50%;
+}
+.subtitulos h2{
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  color: #ec383d;
+}
+.subtitulos h3{
+  font-family: Rockness;
+  font-size: 3em;
+  text-align: center;
+  color: #ec383d;
+}
+.square-rotate{display: block;
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+  background: #ffe2e3 url(../images/asfalt-dark.png) center top repeat;
+  margin-top: -30px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 0;}
+
+.separador{
+  height: 3em;
+}
+
+/* CONTACTO */
+.btn-rrss {
+  border: none !important;
+  padding: 0.7em 0em !important;
+  cursor: pointer;
+}
+.btn-face {
+  background-color:#3b5998;
+}
+.btn-face:hover{
+  opacity: 0.8;
+}
+.btn-insta{
+  background: linear-gradient(135deg, rgba(255,219,128,1) 0%, rgba(252,176,69,1) 12%, rgba(247,119,55,1) 25%, rgba(245,97,64,1) 36%, rgba(253,29,29,1) 47%, rgba(225,48,107,1) 59%, rgba(193,53,132,1) 70%, rgba(131,58,180,1) 81%, rgba(88,81,219,1) 91%, rgba(67,91,229,1) 99%, rgba(64,92,230,1) 100%);
+}
+.btn-insta:hover{
+  opacity: 0.8;
+}
+.btn-mail{
+  background-color: red;
+}
+.btn-mail:hover{
+  opacity: 0.8;
+}
+.btn-wapp{
+  background-color: #00bd2d;
+}
+.btn-wapp:hover{
+  opacity: 0.8;
+}
+.separadorRRSS {
+  height:1.5em;
+  width: 75%;
+  padding: 0px;
+  margin:0px;
+}
+.page-link{
+  width: 18em;
+  background-color: #ffd4d5;
+  color: #ec383d;
+  border: 1px solid #ec383d;
+  font-weight: bold;
+}
+.page-link:hover{
+  background-color: #fdebeb;
+  color: #ff0008;
+  border: 1px solid #ec383d;
+}
+
+
+/* FOOTER */
+.fondobottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 0px 0;
+  height: 180px;
+  background-image: url(../images/bottom-bg.jpg);
+  background-size: cover;
+}
+.fondito{
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.footcont{
+  color:white;
+}
+.footcont:hover{
+  color:rgb(128, 250, 128);
+}
