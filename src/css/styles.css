@@ -1,33 +1,94 @@
 /* GENERALES */
+@font-face {
+  font-family: 'RocknRoll';
+    src: url('/src/fonts/rockness.eot ');
+    src: url('/src/fonts/rockness.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Rockness.woff2') format('woff2'),
+        url('/src/fonts/rockness.woff') format('woff'),
+        url('/src/fonts/rockness.ttf') format('truetype'),
+        url('/src/fonts/rockness.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 h2{
   color: #ec383d;
   text-align: center;
   font-size: 3em;
 }
 h3{
-  font-family: Rockness;
-  font-size: 3em;
+  font-family: RocknRoll;
+  font-size: 2em;
   text-align: center;
   color: #ec383d;
 }
-
-/* ANIMACIONES */
-.fadeIn{
-  transform: translateX(0em);
-  transition: transform 1s 0.3s;
-}
-.fadeIn:hover{
-  transform: translateX(-20em);
-  transition: transform 1s 0.3s;
-}
-
 .row{
   margin:0px!important;
 }
 
+/* ANIMACIONES */
+.aparece {
+  animation-name: aparece;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+@keyframes aparece{
+  from {
+      margin-left: -200%;
+  }
+  to {
+      margin-left:0%;
+  }
+}
+
+
+
+/* NAVBAR */
+.menu {
+  position: fixed;
+  width: 100%;
+  top:0;
+  background-color: rgba(255, 209, 211,0.9)!important;
+  color: #e81b21!important;
+  z-index: 111;
+}
+
+.menuItem {
+
+  color: #e81b21!important;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.dropdown-toggle{
+  color: #e81b21!important;
+  font-size: 1.1em;
+}
+.dropdown-menu{
+  background-color: rgba(255, 237, 238, 0.9)!important;
+  padding: 0px !important;
+  text-align: center;
+}
+.dropdown-menu:active{
+  background-color: rgba(255, 201, 204, 0.9)!important;
+  padding: 0px !important;
+  text-align: center;
+}
+.navbar-toggler{
+  border: 2px solid rgb(232, 27, 33)!important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(232, 27, 33)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+}
+
 /* HEADER */
+#titular{
+  padding-top: 75px;
+}
+
 .subtitulos{
   margin: 0px;
+  padding-right: 15px!important;
+  padding-left: 15px!important;
   border-top: 2px solid #ec383d;
   background: #ffe2e3 url(../images/asfalt-dark.png) center top repeat;
   z-index: 1;position: relative;padding:40px 0px;
@@ -37,13 +98,11 @@ h3{
 }
 .subtitulos h2{
   font-size: 3em;
-  font-weight: 800;
   text-align: center;
   color: #ec383d;
 }
 .subtitulos h3{
-  font-family: Rockness;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   color: #ec383d;
 }
@@ -58,7 +117,7 @@ h3{
   z-index: 0;}
 
 .separador{
-  height: 3em;
+  height: 4.75em;
 }
 .separador-receta{
   height: 1.5em;
@@ -100,18 +159,21 @@ h3{
   padding: 0px;
   margin:0px;
 }
-.page-link{
-  width: 18em;
-  background-color: #ffd4d5;
+
+.selectorUbicacion{
+  padding: 3px;
+  cursor:pointer;
+  background-color: #fad6d6;
+  border: 1px solid #ec383d;
+  border-radius: 5px;
   color: #ec383d;
-  border: 1px solid #ec383d;
   font-weight: bold;
+  opacity: 0.8;
 }
-.page-link:hover{
-  background-color: #fdebeb;
-  color: #ff0008;
-  border: 1px solid #ec383d;
+.selectorUbicacion:hover{
+  opacity: 1;
 }
+
 .mapas{
   width:100%;
 }
@@ -119,7 +181,7 @@ h3{
 /* RECETAS */
 .card-receta{
   padding: 1em;
-  background-color: #fff0f0;
+  background-color: #fad6d6;
   border: 1px solid #ec383d;
   border-radius: 6px;
   margin: 0em 2em 0em 2em;
@@ -146,6 +208,98 @@ h3{
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
 }
 
+/* PACK SALUDABLE */
+.btnPackSaludable {
+  cursor: pointer;
+  margin: auto;
+  padding: 15px;
+  border: 2px solid #ec383d;
+  border-radius: 6px;
+  color: #ec383d;
+  background-color: #ffbfc0;
+  width: 50%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+}
+.btnPackSaludable:hover {
+  border: 2px solid #e70008;
+  color: #eb0008;
+  background-color: #ff8d8e;
+}
+.btnPackSaludable:active {
+  border: 2px solid #ec383d;
+  color: #ec383d;
+  background-color: #ffbfc0;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* PLANES DE ALIMENTACION */
+
+.btnInfo{
+  text-align: center;
+  color: #ec383d;
+  font-size: 1.5em;
+  width:75%;
+  padding: 15px 0px;
+  background-color: transparent;
+  border:none;
+  border-top: 2px solid #ec383d;
+  border-bottom: 2px solid #ec383d;
+  transition: background-color 1.5s;
+}
+.btnInfo:hover{
+  background-color: #ffe3e4;
+  transition: background-color 1.5s;
+}
+
+.hideInformacion{
+  display: none;
+  height: 0px;
+  opacity: 0;
+  transition: display 3s;  
+}
+.showInformacion{
+  display: block;
+  border-bottom: 2px solid  #ec383d;
+  height: 100%;
+  opacity: 1;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+
+  transition: display 1s, height 2s;
+  
+}
+
+.btShopMercadoPago{
+  display:table;
+  margin:auto;
+  width:100%;
+  background-color:#ffd6d7;
+  padding:20px 0px;
+}
+
+
+/* BOTON FIJO */
+
+.btnshadow {
+  z-index: 1;
+  width: 4em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  margin: 0px;
+  padding: 0.7em;
+  background-color: #00bd2d;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 50%;
+  overflow: visible !important;
+}
+.btnshadow:hover {
+  background-color: rgba(0,189,25,.9);
+}
+.btnshadow:active {
+  box-shadow: 0px 0px 0px black;
+}
 
 /* FOOTER */
 .fondobottom{

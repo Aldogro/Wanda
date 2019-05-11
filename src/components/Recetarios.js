@@ -5,6 +5,7 @@ const Recetarios = () => {
   return(
     <div>
       <div className="" id="recetarios"></div>
+			<div className="separador"></div>
 			<div>
 					<div className="subtitulos">
 						<h2>Recetarios</h2>

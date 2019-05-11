@@ -10,9 +10,10 @@ const Contacto = () => {
 
     <div>
       <div id="contacto"></div>
+			<div className="separador"></div>
         <div className="">
           <div className="subtitulos">
-            <h2>Contacto</h2>
+            <h2 className="aparece">Contacto</h2>
           </div>
           <div className="square-rotate"></div>
         </div>
@@ -50,13 +51,17 @@ const Contacto = () => {
 					</div>
 					<div className="col-lg-12 text-center">
 							<h3>Consultorios</h3>
-							<nav aria-label="Page navigation example">
-									<ul className="pagination justify-content-center">
-										<li className="page-item"><a className="page-link" href="#contacto">Córdoba 6499</a></li>
-										<li className="page-item"><a className="page-link" href="#contacto">Mendoza 5800</a></li>
-										<li className="page-item"><a className="page-link" href="#contacto">Avellaneda 1300</a></li>
-									</ul>
-								</nav>
+								<div className="row">
+									<div className="col-lg-3"></div>
+
+									<div id="consultorio1" className="col-lg-2 selectorUbicacion mt-1 ml-1 mr-1">Rosario</div>
+									<div id="consultorio2" className="col-lg-2 selectorUbicacion mt-1 ml-1 mr-1">Funes</div>
+									<div id="consultorio3" className="col-lg-2 selectorUbicacion mt-1 ml-1 mr-1">San Lorenzo</div>
+
+									<div className="col-lg-3"></div>
+								</div>
+							<div className="separadorRRSS"></div>
+
 					</div>
           <Mapas/>
       </div>

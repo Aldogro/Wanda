@@ -5,6 +5,9 @@ const QuienSoy = () => {
   return(
 
     <div>
+					<div id="quienSoy"></div>
+					<div className="separador"></div>
+					<div className="separador"></div>
           <div className="container">
 					<div className="row">
 						<div className="col-lg-6">
